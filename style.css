@@ -1,0 +1,134 @@
+body{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    box-sizing: border-box;
+}
+.background{
+    background-image: url(./assests/bg.jpg);
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.card{
+    padding: 50px 40px;
+    display: flex;
+    /* flex-direction: column; */
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    max-height: 430px;
+    transform: skew(-14deg);
+    background-color: #ffffff73;
+    backdrop-filter: blur(2px);
+    left: 80px;
+}
+
+#card1{
+    top: 50px;
+    
+}
+
+#card2{
+    top: 450px;
+
+}
+
+.profile_pic{
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+}
+
+img{
+    float: left;
+    border-radius: 50%;
+    /* transform: skew(14deg); */
+    width: 120px;
+    height: 120px;
+    transition: 0.5s ease-in-out;
+}
+
+.text{
+    /* height: 100px; */
+    min-height: 100px;
+    max-height: 240px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.text:hover {
+    cursor: default;
+}
+
+.inside_card{
+    height: 100%;
+    transform: skew(14deg);
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+p{
+    /* text-align: justify; */
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+.names{
+    display: inline-block;
+    position: absolute;
+    top: 88px;
+    left: 22px;
+    opacity: 0%;
+    transition: 500ms ease-in-out;
+}
+
+#prof1_name{
+    font-size: medium;
+    font-weight: 100;
+    color: white;
+    
+}
+
+#prof2_name{
+    font-size: medium;
+    font-weight: 100;
+    color: white;
+    left: 30px;
+}
+
+.inside_card:hover .picture{
+    cursor: default;
+    transform: scale(.9);
+    transition: 0.5s ease-in-out;
+}
+.inside_card:hover .names{
+    transform: translateY(-25px);
+    transition: 500ms ease-in-out;
+    opacity: 100%;
+}
+
+@media (max-width: 768px){
+ .inside_card{
+    flex-direction: column;
+    align-items: center;
+ }
+ .card{
+    transform: skew(0deg);
+ }
+ .inside_card{
+    transform: skew(0deg);
+ }
+ .card{
+    left: 50px;
+ }
+}
+
+@media (min-width:768px) {
+    .inside_card{
+        align-items: center;
+    }
+}
+

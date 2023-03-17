@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-image: url(./assests/bg.jpg);
+            opacity: 0.2;
+            background-repeat: no-repeat;
+            height: 115vh;
+            width: 110%;
+        }
+        .card{
+            padding: 50px 50px;
+            max-width: 800px;
+            max-height: 420px;
+            background-color: aquamarine;
+            transform: skew(-14deg);
+            background-color: #ffffff73;
+            backdrop-filter: blur(2px);
+        }
+        .circle{
+            margin-right: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            float: left;
+            shape-outside: circle();
+            transform: skew(14deg);
+            background-repeat: no-repeat;
+
+        }
+        p{
+            margin: 0px;
+            padding: 0px;
+            text-align: justify;
+            line-height: 22px;
+            transform: skew(14deg);
+        }
+        h4{
+            transform: skew(14deg);
+            
+        }
+        #circle1{
+            background-image: url(./assests/profile1.png);
+        }
+        #circle2{
+            background-image: url(./assests/profile2.png);
+        }
+        .names{
+            display: inline-block;
+            position: absolute;
+            top: 117px;
+            left: 38px;
+            opacity: 0%;
+            transition: 500ms ease-in-out;
+        }
+        .card:hover .circle{
+                /* cursor: default;
+                transform: scale(.999);
+                transition: 0.5s ease-in-out; */
+        }
+
+        .card:hover .names{
+            color: white;
+            transform: translateY(-25px);
+            transition: 500ms ease-in-out;
+            opacity: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="background">
+    </div>
+    <div class="container" style="height: 600px; display: flex;flex-direction: column;justify-content: space-evenly; align-items: center;width: 100%;margin: auto;gap: 70px;">
+        <div id="card1" class="card">
+            <div class="circle" id="circle1">
+                <div class="names" id="prof1_name">Mark Smith</div>
+            </div>
+
+                <h4>I HAD THE BEST WEEK WITH MY FAMILY</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, suscipit doloremque voluptatum alias tempore quasi et consectetur libero. Culpa soluta reprehenderit doloremque deserunt doloribus voluptatum perferendis sequi tempore itaque quasi Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, facere!.</p>
+        </div>
+        <div id="card2" class="card">
+            <div class="circle" id="circle2">
+                <div class="names" id="prof1_name">John Smith</div>
+            </div>
+                <h4>WOW! MY LIFE IS COMPLETELY DIFFERENT NOW</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, suscipit doloremque voluptatum alias tempore quasi et consectetur libero. Culpa soluta reprehenderit doloremque deserunt doloribus voluptatum perferendis sequi tempore itaque quasi Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, dolorem!.</p>
+        </div>
+</div>
+</body>
+</html>

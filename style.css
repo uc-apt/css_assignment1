@@ -1,12 +1,13 @@
 .background{
+    
     position: absolute;
     top: 0px;
     left: 0px;
     background-image: url(./assests/bg.jpg);
     opacity: 0.8;
     background-repeat: no-repeat;
-    height: 190vh;
-    width: 110%;
+    height: 100%;
+    width: 100%;
 }
 
 .container{
@@ -15,6 +16,7 @@
     justify-content: space-evenly;
      align-items: center;
     width: 100%;
+    height: fit-content;
     gap: 70px;
     margin-top: 55px;
 }
@@ -50,6 +52,8 @@ p{
     transform: skew(14deg);
 }
 h4{
+    margin-top: 10px;
+    margin-bottom: 15px;
     transform: skew(14deg);
     
 }
@@ -67,11 +71,6 @@ h4{
     opacity: 0%;
     transition: 500ms ease-in-out;
 }
-.card:hover .circle{
-        /* cursor: default;
-        transform: scale(.999);
-        transition: 0.5s ease-in-out; */
-}
 
 .card:hover .names{
     color: white;
@@ -80,11 +79,15 @@ h4{
     opacity: 100%;
 }
 @media (max-width: 768px){
+    .background{
+        height: 116%;
+    }
     .card{
         display: flex;
         flex-direction: column;
         align-items: center;
         transform: skew(0deg);
+        
     }
     h4 , p{
         transform: skew(0deg);
@@ -102,10 +105,40 @@ h4{
 
     
 }
-@media (min-width:768px) {
-    /* .inside_card{
-        flex-direction: column;
-        align-items: center;
+@media (max-width:675px) {
+    
+    .background{
+        height: 127%;
+    }
+}
+@media (max-width:559px) {
+    
+    .background{
+        height: 137%;
+    }
+}
+@media (max-width:460px) {
+    
+    .background{
+        height: 152%;
+    }
+}
+@media (max-width:388px) {
+    
+    .background{
+        height: 166%;
+    }
+}
+@media (max-width:358px) {
+    
+    .background{
+        height: 177%;
+    }
+}
+
+@media (min-width:770px) {
+    /* .background{
+        height: 110%;
     } */
     .card{
         transform: skew(-14deg);
@@ -118,3 +151,4 @@ h4{
 
     }
 }
+
